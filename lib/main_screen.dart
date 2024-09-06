@@ -156,9 +156,9 @@ class SportList extends StatelessWidget {
                   ),
                   child: Image.asset(
                     place.imageAsset,
-                    fit: BoxFit.fitWidth, // Gambar sesuai dengan lebar card tanpa terpotong
+                    fit: BoxFit.fitWidth,
                     width: double.infinity,
-                    height: 350, // Tentukan tinggi gambar jika diperlukan
+                    height: 200, // Sesuaikan tinggi gambar agar tidak overflow
                   ),
                 ),
                 Padding(
@@ -168,7 +168,10 @@ class SportList extends StatelessWidget {
                     children: [
                       Text(
                         place.name,
-                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       SizedBox(height: 10),
                       Text(place.creator),
@@ -178,16 +181,13 @@ class SportList extends StatelessWidget {
               ],
             ),
           ),
-          
         );
-     
       },
       itemCount: places.length,
     );
-    
   }
-     
 }
+
 
 class TourismPlaceGrid extends StatelessWidget {
   final List<Sport> places;
