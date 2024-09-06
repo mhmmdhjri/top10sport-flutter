@@ -159,7 +159,7 @@ class _DetailScreenWebState extends State<DetailScreenWeb> {
             child: Column(
               children: [
                 Text(
-                  "Wisata Bandung",
+                  "Worldsport",
                   style: TextStyle(
                     fontSize: 30.0,
                     fontFamily: 'Staatliches',
